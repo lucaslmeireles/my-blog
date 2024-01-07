@@ -8,20 +8,20 @@ export default function Home() {
         <h1 className="font-medium text-2xl">Hi!</h1>
         <p className="text-xl">
           I&apos;m{" "}
-          <strong className="bg-gradient-to-r from-blue-700 to-blue-400 text-transparent bg-clip-text">
+          <strong className="bg-gradient-to-r from-blue-300 to-blue-100  sm:from-blue-700  sm:to-blue-400 text-transparent bg-clip-text ">
             Lucas
           </strong>
           .
         </p>
       </div>
-      <section className="bg-white bg-opacity-35 rounded-lg py-2 px-5 mt-4 ">
+      <section className="bg-white bg-opacity-35 rounded-lg py-2 px-1 xs:px-5 mt-4 ">
         <h3 className="font-semibold">Who am I?</h3>
-        <p className="text-clip sm:w-[420px]">
+        <p className="text-clip w-[300px] sm:w-[420px]">
           I am a graduate student in Computer Engineer, who loves to take photos
           and finding out how things works.
         </p>
         <h3 className=" pt-4 font-semibold">My projects</h3>
-        <div className="flex justify-between">
+        <div className="flex justify-between sm:flex-row flex-col items-center">
           <div className="group transition ease-in-out delay-100 w-48 bg-gray-100 bg-opacity-80 rounded-lg p-3 mt-2 hover:shadow">
             <h4 className="bg-gradient-to-r from-green-700 to-green-400 text-transparent bg-clip-text">
               Eco APP
@@ -36,7 +36,7 @@ export default function Home() {
               <span className="block max-w-0 group-hover:max-w-14 transition-all duration-500 h-0.5 bg-green-800"></span>
             </a>
           </div>
-          <div className="group transition ease-in-out delay-10 sm:w-48 flex-col bg-gray-100 bg-opacity-80 rounded-lg p-3 mt-2">
+          <div className="group transition ease-in-out delay-10 w-48 flex-col bg-gray-100 bg-opacity-80 rounded-lg p-3 mt-2">
             <h4 className="bg-gradient-to-r from-green-900 to-green-300 text-transparent bg-clip-text">
               Eco WEB
             </h4>
@@ -133,7 +133,10 @@ export default function Home() {
         </div>
       </section>
       <footer className="mt-5">
-        <a className="text-sm text-white" href="">
+        <a
+          className="text-sm text-white"
+          href="https://github.com/lucaslmeireles/my-blog"
+        >
           Feito com ❤️ por Lucas.
         </a>
       </footer>
