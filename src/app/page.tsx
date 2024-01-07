@@ -17,8 +17,8 @@ export default function Home() {
       <section className="bg-white bg-opacity-35 rounded-lg py-2 px-5 mt-4 ">
         <h3 className="font-semibold">Who am I?</h3>
         <p className="text-clip w-[420px]">
-          I am a graduent student in Computer Engeineer, who loves to take
-          photos and finding out how things works.
+          I am a graduate student in Computer Engineer, who loves to take photos
+          and finding out how things works.
         </p>
         <h3 className=" pt-4 font-semibold">My projects</h3>
         <div className="flex justify-between">
