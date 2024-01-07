@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <section className="bg-white bg-opacity-35 rounded-lg py-2 px-5 mt-4 ">
         <h3 className="font-semibold">Who am I?</h3>
-        <p className="text-clip w-[420px]">
+        <p className="text-clip sm:w-[420px]">
           I am a graduate student in Computer Engineer, who loves to take photos
           and finding out how things works.
         </p>
@@ -36,7 +36,7 @@ export default function Home() {
               <span className="block max-w-0 group-hover:max-w-14 transition-all duration-500 h-0.5 bg-green-800"></span>
             </a>
           </div>
-          <div className="group transition ease-in-out delay-10 w-48 flex-col bg-gray-100 bg-opacity-80 rounded-lg p-3 mt-2">
+          <div className="group transition ease-in-out delay-10 sm:w-48 flex-col bg-gray-100 bg-opacity-80 rounded-lg p-3 mt-2">
             <h4 className="bg-gradient-to-r from-green-900 to-green-300 text-transparent bg-clip-text">
               Eco WEB
             </h4>
