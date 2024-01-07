@@ -7,7 +7,7 @@ export default function Home() {
       <div className="">
         <h1 className="font-medium text-2xl">Hi!</h1>
         <p className="text-xl">
-          I'm{" "}
+          I&apos;m{" "}
           <strong className="bg-gradient-to-r from-blue-700 to-blue-400 text-transparent bg-clip-text">
             Lucas
           </strong>
