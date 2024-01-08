@@ -14,8 +14,8 @@ export default function Home({params: {locale}}: HomeData) {
   return (
     <main className="flex min-h-screen flex-col items-center pt-5">
       <div className="">
-        <h1 className="font-medium text-2xl">{t('title')}</h1>
-        <p className="text-xl">
+        <h1 className="font-medium text-2xl dark:text-white">{t('title')}</h1>
+        <p className="text-xl dark:text-white">
           {t('am')}{" "}
           <strong className="bg-gradient-to-r from-blue-300 to-blue-100  sm:from-blue-700  sm:to-blue-400 text-transparent bg-clip-text ">
             Lucas

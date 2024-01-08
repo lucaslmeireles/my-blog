@@ -13,12 +13,14 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'light': 'url("/images/bg-main-light.jpg")',
+        'dark': 'url("/images/bg-night.jpg")'
       },
       screens: {
         'xs': '375px',
       }
     },
   },
+  darkMode: 'class',
   plugins: [],
 }
 export default config

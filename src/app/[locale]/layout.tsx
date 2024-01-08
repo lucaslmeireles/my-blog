@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { ReactNode } from "react";
 import Dropdown from "../components/dropdown";
 import {unstable_setRequestLocale} from 'next-intl/server';
+import Switcher from "../components/switcher";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,9 +42,10 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={inter.className} >
         <NextIntlClientProvider locale={locale} messages={messages}>
-        <main className=" bg-light bg-cover z-0">
-        <header className=" mx-3 my-2 absolute right-0">
+        <main className=" bg-light dark:bg-dark bg-cover z-0">
+        <header className=" flex flex-row justify-between gap-3 mx-3 my-2 absolute right-0">
           <Dropdown/>
+          <Switcher/>
         </header>
           {children}
           </main>
