@@ -1,9 +1,15 @@
-'use client'
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
-import { useTranslations } from "use-intl";
+import { useTranslations } from "next-intl";
+import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 
-export default function Home() {
+type HomeData  = {
+  params: {
+    locale: string;
+  }
+}
+export default function Home({params: {locale}}: HomeData) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('Home')
   return (
     <main className="flex min-h-screen flex-col items-center pt-5">
@@ -144,4 +150,12 @@ export default function Home() {
       </footer>
     </main>
   );
+}
+
+export async function generateMetadata({params: {locale}}: HomeData) {
+  const t = await getTranslations({locale, namespace: 'MetaData'});
+ 
+  return {
+    title: t('page-title')
+  };
 }

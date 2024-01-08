@@ -9,5 +9,8 @@
       "ac": "Acess",
       "smapp": "A social media app",
       "smwebapp": "A social media web app"
+    },
+    "MetaData" : {
+      "page-title": "My blog - Lucas"
     }
   }
