@@ -12,8 +12,8 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'light': 'url("./images/bg-main-light.jpg")',
-        'dark': 'url("./images/bg-night.jpg")'
+        'light': 'url("/images/bg-main-light.jpg")',
+        'dark': 'url("/images/bg-night.jpg")'
       },
       screens: {
         'xs': '375px',
